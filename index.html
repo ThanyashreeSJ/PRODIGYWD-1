@@ -1,45 +1,194 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Weather App</title>
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./style.css">
-  <script src="./script.js" defer></script>
-  <script defer data-domain="sidhhu0603.github.io/prodigywd05" src="https://plausible.io/js/script.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Personal Portfolio website</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://kit.fontawesome.com/1a9a907f05.js" crossorigin="anonymous"></script>
 </head>
-
 <body>
-  <div class="card">
-    <div class="search">
-      <input type="text" class="search-bar" placeholder="Search">
-      <button><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024"
-          height="1.5em" width="1.5em" xmlns="http://www.w3.org/2000/svg">
-          <path
-            d="M909.6 854.5L649.9 594.8C690.2 542.7 712 479 712 412c0-80.2-31.3-155.4-87.9-212.1-56.6-56.7-132-87.9-212.1-87.9s-155.5 31.3-212.1 87.9C143.2 256.5 112 331.8 112 412c0 80.1 31.3 155.5 87.9 212.1C256.5 680.8 331.8 712 412 712c67 0 130.6-21.8 182.7-62l259.7 259.6a8.2 8.2 0 0 0 11.6 0l43.6-43.5a8.2 8.2 0 0 0 0-11.6zM570.4 570.4C528 612.7 471.8 636 412 636s-116-23.3-158.4-65.6C211.3 528 188 471.8 188 412s23.3-116.1 65.6-158.4C296 211.3 352.2 188 412 188s116.1 23.2 158.4 65.6S636 352.2 636 412s-23.3 116.1-65.6 158.4z">
-          </path>
-        </svg></button>
-      <button><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-          stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-crosshair"><circle
-            cx="12" cy="12" r="10"></circle><line x1="22" y1="12" x2="18" y2="12"></line><line x1="6" y1="12"
-            x2="2" y2="12"></line><line x1="12" y1="6" x2="12" y2="2"></line><line x1="12" y1="22" x2="12"
-            y2="18"></line></svg></button>
-    </div>
-
-    <div class="weather loading">
-      <h2 class="city">Weather in Indore</h2>
-      <h1 class="temp">51°C</h1>
-      <div class="flex">
-        <img src="https://openweathermap.org/img/wn/04n.png" alt="" class="icon" />
-        <div class="description">Cloudy</div>
-      </div>
-      <div class="humidity">Humidity: 60%</div>
-      <div class="wind">Wind speed: 6.2 km/h</div>
+<div id="header">
+  <div class="container">
+    <nav>
+      <img src="images/logoo.png" class="logo" />
+      <ul>
+        <li><a href="#header">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="header-text">
+      <p>Computer Science Engineer</p>
+      <h1>Hi, I'm<span> Thanyashree S J</span> <br />from Sri Sairam Institute of Technology</h1>
     </div>
   </div>
-</body>
+</div>
+<!--------------about------------>
+<div id="about">
+  <div class="container">
+    <div class="row">
+      <div class="about-col-1">
+        <!-- Replace image src with your image -->
+        <img src="your_image.jpg" />
+      </div>
+      <div class="about-col-2">
+        <h1 class="sub-title">About Me</h1>
+        <p>
+          As a highly motivated and dedicated Computer Science Engineering student, I am passionate about exploring the fascinating world of technology and its limitless possibilities. Throughout my academic journey, I have gained valuable experience in programming languages such as Python and C, as well as Cloud Computing. I am seeking opportunities where I can apply my knowledge of computer science and engineering principles to develop robust and efficient solutions that positively impact businesses and society.
+        </p>
 
+        <div class="tab-titles">
+          <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+          <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+          <p class="tab-links" onclick="opentab('Education')">Education</p>
+        </div>
+        <div class="tab-contents active-tab" id="Skills">
+          <ul>
+            <li><span>Python</span><br />Programming Language</li>
+            <li><span>Cloud Computing</span><br />AWS, Azure, GCP</li>
+            <li><span>C</span><br />Programming Language</li>
+          </ul>
+        </div>
+
+        <div class="tab-contents" id="Experience">
+          <ul>
+            <li><span>July 2023 - August 2023</span><br />Cloud Computing Internship at Sri Vishwas Vidhyalaya</li>
+          </ul>
+        </div>
+
+        <div class="tab-contents" id="Education">
+          <ul>
+            <li><span>2021 - Present</span><br />Bachelor of Engineering in Computer Science at Sri Sairam Institute of Technology</li>
+            <li><span>2019 - 2021</span><br />SSLC at Sri Vishwas Vidhyalaya</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!------------------------services------------------------------->
+<div id="services">
+  <div class="container">
+    <h1 class="sub-title">My Services</h1>
+    <div class="services-list">
+      <div>
+        <i class="fa-solid fa-code"></i>
+        <h2>Web Design</h2>
+        <p>
+          I offer professional web design services, specializing in crafting visually stunning and user-centric websites that captivate audiences.
+        </p>
+        <a href="#">learn more</a>
+      </div>
+
+      <div>
+        <i class="fa-sharp fa-solid fa-crop"></i>
+        <h2>UI Design</h2>
+        <p>
+          I provide user-centric design solutions, including intuitive user interfaces and responsive design, to enhance experiences and captivate audiences.
+        </p>
+        <a href="#">learn more</a>
+      </div>
+
+      <div>
+        <i class="fa-brands fa-app-store"></i>
+        <h2>App Design</h2>
+        <p>
+          I specialize in crafting seamless app experiences that captivate users and drive engagement, focusing on intuitive navigation and attention-grabbing visuals.
+        </p>
+        <a href="#">learn more</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!------------------------Portfolio------------------------------->
+<div id="portfolio">
+  <div class="container">
+    <h1 class="sub-title">My Work</h1>
+    <div class="work-list">
+      <div class="work">
+        <img src="images/workk.jpg" />
+        <div class="layer">
+          <h3>Smart Bin Monitoring System</h3>
+          <p>
+            Proposed "Smart Bin Monitoring System," integrating ultrasonic sensors and IoT for real-time waste monitoring in urban areas.
+          </p>
+          <a href="#">learn more</a>
+        </div>
+      </div>
+      <!-- Add more portfolio items as needed -->
+    </div>
+    <a href="#" class="btn">See More</a>
+  </div>
+</div>
+<!------------------------contact form------------------------------->
+<div id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="contact-left">
+        <h1 class="sub-title">Contact Me</h1>
+        <p><i class="fa-solid fa-paper-plane"></i>your_email@example.com</p>
+        <p><i class="fa-solid fa-phone"></i>your_phone_number</p>
+        <div class="social-icons">
+          <!-- Update social media links -->
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter-square"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+      </div>
+      <!-- Update CV download link -->
+      <a href="#" download class="btn btn2">Download CV</a>
+      <div class="contact-right">
+        <form name="submit-to-google-sheet">
+          <input type="text" name="Name" placeholder="Your Name" required />
+          <input type="email" name="Email" placeholder="Your Email" required />
+          <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+          <button type="submit" class="btn btn2">Submit</button>
+        </form>
+        <span id="msg"></span>
+      </div>
+    </div>
+  </div>
+  <div class="copyright">
+    <p>Copyright © Thanyashree S J. Made with ❤</p>
+  </div>
+</div>
+
+<script>
+  var tablinks = document.getElementsByClassName("tab-links");
+  var tabcontents = document.getElementsByClassName("tab-contents");
+
+  function opentab(tabname) {
+    for (tablink of tablinks) {
+      tablink.classList.remove("active-link");
+    }
+    for (tabcontent of tabcontents) {
+      tabcontent.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+  }
+</script>
+<script>
+  const scriptURL = "https://script.google.com/macros/s/AKfycbzy4WlerMXCtdjFzZIj_aCZgPZC9deEUwOX42F4U2BXLZqBDCYazuGduaX6KahGNpQ/exec";
+  const form = document.forms["submit-to-google-sheet"];
+  const msg = document.getElementById("msg");
+  form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    fetch(scriptURL, { method: "POST", body: new FormData(form) })
+      .then((response) => {
+        msg.innerHTML = "Message sent successfully";
+        setTimeout(function () {
+          msg.innerHTML = "";
+        }, 5000);
+        form.reset();
+      })
+      .catch((error) => console.error("Error!", error.message));
+  });
+</script>
+</body>
 </html>
